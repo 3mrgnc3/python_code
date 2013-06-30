@@ -1,9 +1,10 @@
 from _winreg import *
 from optparse import OptionParser
-import sys
+import sys, os
 
-def regfor(): # Work in Progress, need to add more keys 
-    print " ### Software\Microsoft\Windows\CurrentVersion\Run Entries ##"
+def regfor(): # Work in Progress, need to add more keys
+    print " "
+    print "[+] HKLM\..\..\Run Entries "
     run = "Software\Microsoft\Windows\CurrentVersion\Run"
     key = OpenKey(HKEY_LOCAL_MACHINE, run)
     try:
@@ -15,6 +16,11 @@ def regfor(): # Work in Progress, need to add more keys
     except WindowsError:
         pass
 
+def filfor(): # Add additional checks
+    print " "
+    print "[+] Listing %TEMP% Directory "
+    os.system("dir /b %TEMP%")
+    
 
 def main():
     parser = OptionParser('%prog '+\
@@ -29,7 +35,7 @@ def main():
 
     if regf != None:
         regfor()
-        # Add a function to check File System
+        filfor()
 
 
 
