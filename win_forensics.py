@@ -16,6 +16,9 @@ def regfor(): # Work in Progress, need to add more keys
     except WindowsError:
         pass
 
+    # Additional way to print reg values
+    # os.system("reg query HKLM\Software\Microsoft\Windows\CurrentVersion\Run")
+
 def filfor(): # Add additional checks
     print " "
     print "[+] Listing %TEMP% Directory "
