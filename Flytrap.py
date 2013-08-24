@@ -1,5 +1,5 @@
 #################################################################################
-#	Flytrap.py - Auto add iptables rules based on connections		#
+#	Flytrap.py - Auto add firewall rules based on connections		#
 #	Copyrighted:  Primal Security Podcast - www.primalsecurity.net         	#
 #									       	#
 #    	This program is free software: you can redistribute it and/or modify	#
