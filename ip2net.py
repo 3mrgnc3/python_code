@@ -1,6 +1,7 @@
 #################################################################################
 #	ip2net.py -- Looks up network information given a file containing IPs   #
 #       Heavily commented for educational purposes                              #
+#       Requires Cymruwhois pacakage: https://pypi.python.org/pypi/cymruwhois   #
 #	Copyrighted:  Primal Security Podcast - www.primalsecurity.net         	#
 #									       	#
 #    	This program is free software: you can redistribute it and/or modify	#
